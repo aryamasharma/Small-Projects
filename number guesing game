@@ -1,0 +1,16 @@
+import random
+
+randomnumber=random.randrange(0,100)
+guess =input("guess the number")
+tries = 0
+while not guess==randomnumber:
+
+  if guess<randomnumber:
+    print("the number is higher")
+    tries+=1
+  elif guess>randomnumber:
+     print("the number is lower")
+     tries+= 1
+
+
+print(f"number of tries it took is {tries}")
